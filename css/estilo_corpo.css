@@ -1,0 +1,51 @@
+.container {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.cartaz img {
+    display: flex;
+    width: 100%;
+}
+
+.category {
+    margin: auto;
+    display: flex;
+    margin: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    min-width: 15%;
+    line-height: 100px;
+    background-color: #FFF;
+    font-weight: bolder;
+    text-align: center;
+    border: black 2px solid;
+    flex-grow: 1;
+}
+
+p {
+    font-size: 15px;
+    text-align: left;
+    border-bottom: black solid 1px;
+}
+
+.category:hover {
+    background-color: #d8d7d7;
+    transition: 0.5s;
+}
+
+#footer {
+    background-color: black;
+    text-align: center;
+    margin: 0;
+    line-height: 60px;
+}
+
+h3 {
+    color: white;
+    padding: 10px;
+    margin: 0;
+}

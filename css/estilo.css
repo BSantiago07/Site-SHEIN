@@ -1,0 +1,135 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+
+/* #header {
+    background-color: #FF2347;
+    display: flex;
+    width: 100%;
+}
+
+#header img {
+    padding-left: 300px;
+} */
+
+#menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#logo {
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#logo h1 {
+    text-align: center;
+    background-color: #F7F8FA;
+    margin: 0;
+    padding: 8px 0 8px 0;
+    letter-spacing: 0.4rem;
+}
+
+#btt_menu {
+    display: none;
+}
+
+label[for="btt_menu"] {
+    position: absolute;
+    padding-left: 10px;
+    color: black;
+    text-align: center;
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding-left: 0;
+    overflow: hidden;
+    background-color: #FFF;
+}
+
+li {
+    float: left;
+}
+
+li a,
+.drop_btt {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 20px 15px;
+    text-decoration: none;
+}
+
+li:hover,
+.dropdown:hover,
+.drop_btt:hover {
+    border-bottom: black solid 1px;
+}
+
+.dropdown_content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 150px;
+    z-index: 1;
+}
+
+.dropdown_content a {
+    color: black;
+    font-weight: bold;
+    padding: 15px 17px;
+    display: block;
+    text-align: left;
+}
+
+.dropdown_content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown_content {
+    display: block;
+}
+
+@media(max-width:800px) {
+    #menu {
+        text-align: left;
+    }
+    label[for="btt_menu"] {
+        display: block;
+    }
+    #nav {
+        display: none;
+    }
+    #btt_menu:checked~#nav {
+        display: block;
+    }
+    #nav li {
+        float: none;
+        text-align: left;
+    }
+    #nav .dropdown_content {
+        position: relative;
+    }
+    #nav .dropdown_content a {
+        text-align: left;
+    }
+}
+
+@media(min-width: 450px) {
+    #logo {
+        font-size: 25px;
+    }
+    label[for="btt_menu"] {
+        font-size: 40px;
+    }
+}
